@@ -28,7 +28,7 @@ main() {
   tmux set-option -g message-command-fg "${white}"
   tmux set-option -g status-left "#[bg=${dark_gray}] #I #[fg=${dark_gray}]"
   tmux set-option -g status-left-style "fg=${white},bg=${dark_purple},bold"
-  tmux set-option -g status-right "${left_sep}#[bg=${black},reverse] #S ${left_sep}#[bg=${light_purple}]#[fg=${dark_gray}] #(hostname -s) "
+  tmux set-option -g status-right "${left_sep}#[bg=${black},reverse] #S #[bg=${dark_purple},reverse]${left_sep}#[fg=${dark_purple}]#[bg=${black}] #(hostname -s) "
   tmux set-option -g status-right-style "fg=${light_purple},bg=${dark_gray}"
   tmux set-window-option -g window-status-activity-style "fg=${white},bg=${gray}"
   tmux set-window-option -g window-status-separator ''
