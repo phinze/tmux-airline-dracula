@@ -32,7 +32,7 @@ main() {
   tmux set-option -g status-right-style "fg=${light_purple},bg=${dark_gray}"
   tmux set-window-option -g window-status-activity-style "fg=${white},bg=${gray}"
   tmux set-window-option -g window-status-separator ''
-  tmux set-window-option -g window-status-format ' #I #W'
+  tmux set-window-option -g window-status-format ' #I #W '
   tmux set-window-option -g window-status-style "fg=${white},bg=${dark_purple}"
   tmux set-window-option -g window-status-current-format \
     "#[fg=${dark_purple},bg=${dark_gray}]${right_sep}#[fg=${dark_gray},bg=${cyan}]${right_sep}#[fg=${black}] #I ${right_alt_sep} #W #[fg=${cyan},bg=${dark_gray}]${right_sep}#[fg=${dark_gray},bg=${dark_purple}]${right_sep}"
