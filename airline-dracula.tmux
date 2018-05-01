@@ -13,6 +13,7 @@ main() {
   pink='colour212'
   orange='colour215'
   green='colour84'
+  red='colour203'
 
   ## Icons
   left_sep=''
@@ -37,6 +38,7 @@ main() {
   tmux set-window-option -g window-status-separator ""
   tmux set-window-option -g window-status-format ' #I #W '
   tmux set-window-option -g window-status-style "fg=${white},bg=${dark_gray}"
+  tmux set-window-option -g window-status-last-style "fg=${orange},bg=${dark_gray}"
   tmux set-window-option -g window-status-current-format \
     "#[fg=${dark_gray},bg=${cyan}]${right_sep}#[fg=${black}] #I ${right_alt_sep} #W #[fg=${cyan},bg=${dark_gray}]${right_sep}"
   tmux set-window-option -g window-status-current-style "fg=${dark_gray},bg=${light_purple}"
