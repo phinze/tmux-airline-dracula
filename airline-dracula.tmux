@@ -40,7 +40,7 @@ main() {
   tmux set-window-option -g window-status-style "fg=${white},bg=${dark_gray}"
   tmux set-window-option -g window-status-last-style "fg=${orange},bg=${dark_gray}"
   tmux set-window-option -g window-status-current-format \
-    "#[fg=${dark_gray},bg=${cyan}]${right_sep}#[fg=${black}] #I ${right_alt_sep} #W #[fg=${cyan},bg=${dark_gray}]${right_sep}"
+    "#[fg=${dark_gray},bg=${cyan}]${right_sep}#[fg=${black}] #I ${right_alt_sep} #W#F #[fg=${cyan},bg=${dark_gray}]${right_sep}"
   tmux set-window-option -g window-status-current-style "fg=${dark_gray},bg=${light_purple}"
 }
 
