@@ -32,7 +32,7 @@ main() {
   tmux set-option -g message-command-fg "${white}"
   tmux set-option -g status-left " #[bold]#I #[fg=${dark_gray},reverse,nobold]${right_sep}"
   tmux set-option -g status-left-style "fg=${white},bg=${dark_purple}"
-  tmux set-option -g status-right "#[fg=${green},bg=${dark_gray}]${left_sep}#[bg=${black},reverse] #S #[bg=${dark_gray},reverse]${left_sep}#[fg=${dark_gray},bg=${light_purple}]${left_sep}#[fg=${light_purple},bg=${black}] #(hostname -s) #[bg=${dark_gray},fg=${light_purple}]${left_sep}#[bg=${dark_purple},fg=${dark_gray}]${left_sep}#[bg=${white},bold,fg=${dark_purple}] %Y-%m-%d %H:%M "
+  tmux set-option -g status-right "#[fg=${green},bg=${dark_gray}]${left_sep}#[bg=${black},reverse] #S #[bg=${dark_gray},reverse]${left_sep}#[fg=${dark_gray},bg=${light_purple}]${left_sep}#[fg=${light_purple},bg=${black}] #(hostname -s) #[bg=${dark_gray},fg=${light_purple}]${left_sep}#[bg=${dark_purple},fg=${dark_gray}]${left_sep}#[bg=${white},bold,fg=${dark_purple}] #{battery_percentage} "
   tmux set-option -g status-right-style "fg=${light_purple},bg=${dark_gray}"
   tmux set-window-option -g window-status-activity-style "fg=${white},bg=${gray}"
   tmux set-window-option -g window-status-separator ""
